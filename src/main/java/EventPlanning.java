@@ -16,7 +16,7 @@ class EventPlanning {
   String[] foodChoices = {"Barbeque", "Seafood", "Soul-food"};
   String[] beverageChoices = {"Open-bar", "Soda-bar", "Margaritas"};
   String[] entertainmentChoices = {"Live-band", "Laser-tag", "Pool-party"};
-  String[] couponOptions = {"New Customer", "VIP"};
+  String[] couponOptions = {"New Customer", "VIP", "N/A"};
 
   public int getGuests() {
     return mGuests;
@@ -66,6 +66,8 @@ class EventPlanning {
       cost -= 100;
     } else if ( mCoupon.equals("New Customer") ) {
       cost -= 50;
+    } else if ( mCoupon.equals("N/A") ) {
+      cost += 0;
     }
     return cost;
   }

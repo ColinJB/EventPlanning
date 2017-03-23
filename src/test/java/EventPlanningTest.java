@@ -40,7 +40,7 @@ public class EventPlanningTest {
   @Test
   public void getCost_returnsCostOfEvent_Integer() {
     EventPlanning testEvent = new EventPlanning(100, "Barbeque", "Open-bar", "Live-band", "VIP");
-    Integer expected = 2400;
+    Integer expected = 2300;
     assertEquals(expected, testEvent.getCost());
   }
 
