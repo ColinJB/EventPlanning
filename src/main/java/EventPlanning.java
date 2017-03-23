@@ -16,4 +16,8 @@ class EventPlanning {
   public String getFood() {
     return mFood;
   }
+
+  public String getBeverage() {
+    return mBeverage;
+  }
 }
