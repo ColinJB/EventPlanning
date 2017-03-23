@@ -3,17 +3,20 @@ class EventPlanning {
   private String mFood;
   private String mBeverage;
   private String mEntertainment;
+  private String mCoupon;
 
-  public EventPlanning(int guests, String food, String beverage, String entertainment) {
+  public EventPlanning(int guests, String food, String beverage, String entertainment, String coupon) {
     mGuests = guests;
     mFood = food;
     mBeverage = beverage;
     mEntertainment = entertainment;
+    mCoupon = coupon;
   }
 
   String[] foodChoices = {"Barbeque", "Seafood", "Soul-food"};
   String[] beverageChoices = {"Open-bar", "Soda-bar", "Margaritas"};
   String[] entertainmentChoices = {"Live-band", "Laser-tag", "Pool-party"};
+  String[] couponOptions = {"New Customer", "VIP"};
 
   public int getGuests() {
     return mGuests;
@@ -27,6 +30,10 @@ class EventPlanning {
   public String getEntertainment() {
     return mEntertainment;
   }
+  public String getCoupon() {
+    return mCoupon;
+  }
+
   public Integer getCost() {
     Integer cost = 0;
     cost += (mGuests * 5);
