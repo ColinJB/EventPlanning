@@ -1,25 +1,30 @@
-# _EventPlanning_
+# _Event Planning_
 
-#### _EventPlanning, 03-23-2017_
+#### _Event Planning, 03-23-2017_
 
 #### By _**Colin Bloom**_
 
 ## Description
-_Example text for the description of the project_
+_Simple command line application that takes user input and displays event and calculates total._
 
 
 ## Specifications
 
 | Behavior                   | Input Example     | Output Example    |
 | -------------------------- | -----------------:| -----------------:|
-
+|Creates event | event | event|
+|Print # of guests | guests | 50|
+|Print food option| food | Seafood |
+|Print beverages | beverages | open-bar|
+|Print entertainment | entertainment | Laser-tag |
+|Print coupon | coupon | VIP|
+|Print total | total | $100|
 
 
 ## Setup/Installation Requirements
 
 * _Clone the repository_
-* _Run the command 'gradle run'_
-* _Open browser and go to localhost:4567_
+* _Run the application_
 
 
 ### License
