@@ -13,6 +13,13 @@ public class EventPlanningTest {
   public void getGuests_returnsNumberOfGuests_int() {
     EventPlanning testEvent = new EventPlanning(100, "Barbeque", "Open-bar", "Live-band");
     int expected = 100;
-    assertEquals(100, testEvent.getGuests());
+    assertEquals(expected, testEvent.getGuests());
+  }
+
+  @Test
+  public void getFood_returnsFoodChoice_String() {
+    EventPlanning testEvent = new EventPlanning(100, "Barbeque", "Open-bar", "Live-band");
+    String expected = "Barbeque";
+    assertEquals(expected, testEvent.getFood());
   }
 }

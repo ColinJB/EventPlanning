@@ -13,4 +13,7 @@ class EventPlanning {
   public int getGuests() {
     return mGuests;
   }
+  public String getFood() {
+    return mFood;
+  }
 }
