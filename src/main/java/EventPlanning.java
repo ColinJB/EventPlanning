@@ -10,6 +10,11 @@ class EventPlanning {
     mBeverage = beverage;
     mEntertainment = entertainment;
   }
+
+  String[] foodChoices = {"Barbeque", "Seafood", "Soul-food"};
+  String[] beverageChoices = {"Open-bar", "Soda-bar", "Margaritas"};
+  String[] entertainmentChoices = {"Live-band", "Laser-tag", "Pool-party"};
+
   public int getGuests() {
     return mGuests;
   }
@@ -21,5 +26,34 @@ class EventPlanning {
   }
   public String getEntertainment() {
     return mEntertainment;
+  }
+  public Integer getCost() {
+    Integer cost = 0;
+    cost += (mGuests * 5);
+
+    if ( mFood.equals("Barbeque") ) {
+      cost += (mGuests * 7);
+    } else if ( mFood.equals("Seafood") ) {
+      cost += (mGuests * 10);
+    } else if ( mFood.equals("Soul-food") ) {
+      cost += (mGuests * 5);
+    }
+
+    if ( mBeverage.equals("Open-bar") ) {
+      cost += (mGuests * 10);
+    } else if ( mBeverage.equals("Soda-bar") ) {
+      cost += (mGuests / 2);
+    } else if ( mBeverage.equals("Margaritas") ) {
+      cost += (mGuests * 5);
+    }
+
+    if ( mEntertainment.equals("Live-band") ) {
+      cost += 200;
+    } else if ( mEntertainment.equals("Laser-tag") ) {
+      cost += 100;
+    } else if ( mEntertainment.equals("Pool-party") ) {
+      cost += 75;
+    }
+    return cost;
   }
 }

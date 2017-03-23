@@ -36,4 +36,11 @@ public class EventPlanningTest {
     String expected = "Live-band";
     assertEquals(expected, testEvent.getEntertainment());
   }
+
+  @Test
+  public void getCost_returnsCostOfEvent_Integer() {
+    EventPlanning testEvent = new EventPlanning(100, "Barbeque", "Open-bar", "Live-band");
+    Integer expected = 2400;
+    assertEquals(expected, testEvent.getCost());
+  }
 }
