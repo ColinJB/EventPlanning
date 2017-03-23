@@ -61,6 +61,12 @@ class EventPlanning {
     } else if ( mEntertainment.equals("Pool-party") ) {
       cost += 75;
     }
+
+    if ( mCoupon.equals("VIP") ) {
+      cost -= 100;
+    } else if ( mCoupon.equals("New Customer") ) {
+      cost -= 50;
+    }
     return cost;
   }
 }
