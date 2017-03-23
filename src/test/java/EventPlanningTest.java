@@ -8,4 +8,11 @@ public class EventPlanningTest {
     EventPlanning testEvent = new EventPlanning(100, "Barbeque", "Open-bar", "Live-band");
     assertEquals(true, testEvent instanceof EventPlanning);
   }
+
+  @Test
+  public void getGuests_returnsNumberOfGuests_int() {
+    EventPlanning testEvent = new EventPlanning(100, "Barbeque", "Open-bar", "Live-band");
+    int expected = 100;
+    assertEquals(100, testEvent.getGuests());
+  }
 }

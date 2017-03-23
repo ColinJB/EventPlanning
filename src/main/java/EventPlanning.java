@@ -10,5 +10,7 @@ class EventPlanning {
     mBeverage = beverage;
     mEntertainment = entertainment;
   }
-  
+  public int getGuests() {
+    return mGuests;
+  }
 }
