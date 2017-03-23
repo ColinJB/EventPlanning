@@ -16,8 +16,10 @@ class EventPlanning {
   public String getFood() {
     return mFood;
   }
-
   public String getBeverage() {
     return mBeverage;
+  }
+  public String getEntertainment() {
+    return mEntertainment;
   }
 }

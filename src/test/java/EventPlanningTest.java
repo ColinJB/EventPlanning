@@ -29,4 +29,11 @@ public class EventPlanningTest {
     String expected = "Open-bar";
     assertEquals(expected, testEvent.getBeverage());
   }
+
+  @Test
+  public void getEntertainment_returnsEntertainmentChoice_String() {
+    EventPlanning testEvent = new EventPlanning(100, "Barbeque", "Open-bar", "Live-band");
+    String expected = "Live-band";
+    assertEquals(expected, testEvent.getEntertainment());
+  }
 }
